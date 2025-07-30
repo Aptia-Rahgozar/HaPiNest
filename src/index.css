@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primaryDark: #1c474e;
+  --color-primaryLight: #335960;
+  --color-primaryLighter: #adbdbf;
+  --color-secondaryPink: #f5eeeb;
+  --color-myBlack: #031619;
+  --color-grayDark: #666d6f;
+  --color-grayLight: #949494;
+  --color-grayLighter: #ebebeb;
+  --color-base: #fafafa;
+  --color-white: #ffffff;
+
+  --shadow-myShadow: 0 4px 2px 0 rgba(207, 207, 207, 1);
+}
+
+/* Your own normalize rules or tweaks */
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fafafa;
+}

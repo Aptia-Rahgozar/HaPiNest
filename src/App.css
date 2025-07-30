@@ -1,0 +1,171 @@
+main {
+  flex-grow: 1;
+  max-width: 1248px;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.fullscreen-background {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Define the keyframe animation */
+@keyframes in-and-out-rotate {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  25% {
+    transform: rotateX(15deg) rotateY(26deg);
+  }
+  /* Optional: Keep it at max rotation for a bit */
+
+  75% {
+    transform: rotateX(15deg) rotateY(-26deg);
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+}
+
+/* Define the animation class */
+.animate-in-and-out-on-scroll {
+  animation: in-and-out-rotate 2s ease-in-out forwards;
+    /* Add this for performance hint on iOS */
+  will-change: transform;
+}
+
+
+
+
+/* -------------------- Typography --------------------  */
+.short-line-height {
+  line-height: 20px;
+}
+
+.font-hero-heading {
+  font-size: 30px;
+  font-weight: 700;
+  text-shadow: 0px 4px 4px #1c2e2e96;
+}
+
+.font-hero-subheading {
+  font-size: 28px;
+  font-weight: 275;
+  text-shadow: 0px 4px 4px #1c2e2e96;
+}
+
+.font-drawer-big {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.font-drawer-small {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.font-footer {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.font-contact-large {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.font-about-large {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* ON SMALL SCREENS */
+@media (min-width: 600px) {
+  .font-hero-subheading {
+    font-size: 38px;
+    font-weight: 200;
+  }
+
+  .font-hero-heading {
+    font-size: 40px;
+    font-weight: 700;
+  }
+}
+
+/* ON MEDIUM SCREENS */
+@media (min-width: 768px) {
+  .font-hero-subheading {
+    font-size: 48px;
+    font-weight: 200;
+  }
+
+  .font-hero-heading {
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  .font-footer {
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+
+/* ON LARGE SCREENS */
+@media (min-width: 992px) {
+  .font-hero-subheading {
+    font-size: 60px;
+    font-weight: 200;
+  }
+
+  .font-hero-heading {
+    font-size: 64px;
+    font-weight: 700;
+  }
+
+  .font-header-active {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .font-header-inactive {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .font-header-inactive:hover {
+    font-weight: 700;
+  }
+}
+
+/* -------------------- Buttons --------------------  */
+.hero-button-container {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button-primary-big {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 224px;
+  height: 56px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px #1c2e2e96;
+  color: #070808;
+  font-size: 16px;
+  font-weight: 500;
+
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-primary-big:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.05, 1.05);
+}
