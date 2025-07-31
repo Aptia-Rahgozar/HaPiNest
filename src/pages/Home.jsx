@@ -44,9 +44,8 @@ export const Home = ({ slides, title }) => {
     AOS.init({
       duration: 1500, // Optional: animation duration
       once: true, // Optional: animation happens only once
+      startEvent: "load", // Delay init until window.onload
     });
-
-    AOS.refresh(); // Refresh to ensure correct behavior after mount
   }, []);
 
   useEffect(() => {
