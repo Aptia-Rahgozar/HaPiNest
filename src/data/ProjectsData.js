@@ -17,20 +17,21 @@ const slides = [
     image: projectCoverSmall02,
     title: "Mobile Finance App",
     subtitle: "A Course Project",
-    url: "",
+    url: "/underConstruction",
     mobileApp: true,
   },
   {
     image: projectCoverSmall03,
     title: "Visual Design\nShowcase",
     subtitle: "Various Projects",
-    url: "",
+    url: "/underConstruction",
     mobileApp: false,
   },
   {
     image: projectCoverSmall04,
     title: "Personal Portfolio\nWebsite",
     subtitle: "A Real Personal Project",
+    url: "/underConstruction",
     mobileApp: false,
   },
 ];

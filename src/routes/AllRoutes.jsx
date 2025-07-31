@@ -7,6 +7,7 @@ import {
   Project01,
   Project02,
   PageNotFound,
+  UnderConstruction,
 } from "../pages";
 
 import { slides } from "../data/ProjectsData";
@@ -23,6 +24,10 @@ export const AllRoutes = () => {
         <Route path="projects/01" element={<Project01 title="Project 01" />} />
         <Route path="projects/02" element={<Project02 title="Project02" />} />
         <Route path="aboutMe" element={<AboutMe title="About Me" />} />
+        <Route
+          path="underConstruction"
+          element={<UnderConstruction title="Page Under Construction" />}
+        />
         <Route path="*" element={<PageNotFound title="Page Not Found" />} />
       </Routes>
     </>

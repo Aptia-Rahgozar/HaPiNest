@@ -50,3 +50,4 @@ export { default as nest } from "./images/nest.jpg";
 export { default as project01DesignProcess } from "./images/project-01-design-process.jpg";
 export { default as play } from "./images/play.jpg";
 export { default as project01MobileHero } from "./images/project01-mobile-hero.jpg";
+export { default as cone } from "./images/cone.svg";
