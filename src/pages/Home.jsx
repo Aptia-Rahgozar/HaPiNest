@@ -40,13 +40,13 @@ export const Home = ({ slides, title }) => {
   useTitle(title);
   const location = useLocation();
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1500, // Optional: animation duration
-      once: true, // Optional: animation happens only once
-      startEvent: "load", // Delay init until window.onload
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1500, // Optional: animation duration
+  //     once: false, // Optional: animation happens only once
+  //     startEvent: "load", // Delay init until window.onload
+  //   });
+  // }, []);
 
   useEffect(() => {
     if (location.state?.scrollToContact) {

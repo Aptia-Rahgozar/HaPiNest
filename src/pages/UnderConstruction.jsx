@@ -7,7 +7,7 @@ export const UnderConstruction = ({ title }) => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-col items-center">
+    <div data-aos="zoom-in-up" className="flex flex-col items-center">
       <img src={cone} alt="traffic cone" />
       <p className="text-primaryDark font-medium text-[20px] min-[768px]:text-[36px] mt-6 text-center">
         PAGE IS UNDER CONSTRUCTION
