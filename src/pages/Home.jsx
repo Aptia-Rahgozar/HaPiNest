@@ -166,11 +166,11 @@ export const Home = ({ slides, title }) => {
             <img
               src={contactIconWhite}
               alt="contact icon white"
-              className="mt-8"
+              className="mt-7"
             />
 
-            <h3 className="font-contact-large text-white mt-4">Contact Me</h3>
-            <div className="flex justify-center mt-3">
+            <h3 className="font-contact-large text-white mt-3">Contact Me</h3>
+            <div className="flex justify-center mt-2">
               <img src={mailIconWhite} alt="mail icon" />
               <a
                 href="mailto:habibeh.pirali@gmail.com"
@@ -221,13 +221,19 @@ export const Home = ({ slides, title }) => {
                 data-aos-delay="300"
               />
             </a>
-            <img
-              src={instagramLogo}
-              alt="instagram logo"
-              data-aos="fade-right"
-              data-aos-duration="2500"
-              data-aos-delay="100"
-            />
+            <a
+              href="https://www.instagram.com/hapinestdesign?igsh=MTQxOGNyNWRqbTByOA=="
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={instagramLogo}
+                alt="instagram logo"
+                data-aos="fade-right"
+                data-aos-duration="2500"
+                data-aos-delay="100"
+              />
+            </a>
           </div>
         </section>
 
@@ -250,9 +256,9 @@ export const Home = ({ slides, title }) => {
               <div className="mt-6 flex-1">
                 <div className="h-full bg-primaryLight py-8 px-6 rounded-2xl">
                   <img
-                    src={profilePictureLarge}
+                    src={profilePicture}
                     alt="profile picture"
-                    className="rounded-full mx-auto"
+                    className="rounded-full mx-auto w-1/2 mt-5"
                   />
                   <img
                     src={contactIconWhite}

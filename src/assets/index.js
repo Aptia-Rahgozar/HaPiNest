@@ -40,7 +40,7 @@ export { default as discoverGrayDark } from "./icons/discover-gray-dark.svg";
 export { default as unhappySmiley } from "./icons/unhappy.svg";
 
 // IMAGES
-export { default as profilePicture } from "./images/profile-picture.jpg";
+export { default as profilePicture } from "./images/profile-picture.png";
 export { default as projectCoverSmall01 } from "./images/project-cover-small-01.jpg";
 export { default as projectCoverSmall02 } from "./images/project-cover-small-02.jpg";
 export { default as projectCoverSmall03 } from "./images/project-cover-small-03.jpg";
