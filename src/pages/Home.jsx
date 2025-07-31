@@ -45,6 +45,8 @@ export const Home = ({ slides, title }) => {
       duration: 1500, // Optional: animation duration
       once: true, // Optional: animation happens only once
     });
+
+    AOS.refresh(); // Refresh to ensure correct behavior after mount
   }, []);
 
   useEffect(() => {
