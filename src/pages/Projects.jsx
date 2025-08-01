@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router";
+import AOS from "aos";
 
 import { useTitle } from "../hooks/useTitle";
 
@@ -15,6 +16,14 @@ import {
 export const Projects = ({ slides, title }) => {
   useTitle(title);
   const [mobileApps, setMobileApps] = useState(true);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1500, // Optional: animation duration
+      once: false, // Optional: animation happens only once
+      startEvent: "DOMContentLoaded", // Delay init until window.onload
+    });
+  }, []);
 
   return (
     <div data-aos="zoom-in-up">

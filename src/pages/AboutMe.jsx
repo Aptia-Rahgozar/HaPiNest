@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css";
+
 import { useTitle } from "../hooks/useTitle";
 import { AnimatedDiv } from "../components";
 
@@ -24,9 +24,9 @@ export const AboutMe = ({ title }) => {
 
   useEffect(() => {
     AOS.init({
-      disable: false,
       duration: 1500, // Optional: animation duration
-      once: true, // Optional: animation happens only once
+      once: false, // Optional: animation happens only once
+      startEvent: "DOMContentLoaded", // Delay init until window.onload
     });
   }, []);
 
