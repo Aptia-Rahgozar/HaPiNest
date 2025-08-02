@@ -168,7 +168,11 @@ export const Project01 = ({ title }) => {
         <div className="min-[768px]:flex-1 max-w-[312px] min-[768px]:max-w-[856px] min-[768px]:flex min-[768px]:flex-col min-[768px]:justify-between min-[768px]:max-h-[492px] mx-auto min-[768px]:mx-0">
           {/* Hero (Mobile) */}
           <div className="min-[768px]:hidden rounded-2xl mb-4 shadow-myShadow">
-            <img src={project01MobileHero} alt="project 1 hero" className="rounded-2xl" />
+            <img
+              src={project01MobileHero}
+              alt="project 1 hero"
+              className="rounded-2xl"
+            />
           </div>
           {/* Introduction (Mobile) */}
           <div className="p-4 bg-secondaryPink mx-auto min-[768px]:mx-0 shadow-myShadow rounded-2xl">
@@ -460,7 +464,7 @@ export const Project01 = ({ title }) => {
               How it works!
             </span>
           </h2>
-          <div className="flex items-center justify-center h-[210px] min-[768px]:h-[560px] bg-[#d9d9d9] rounded-2xl">
+          <div className="flex items-center justify-center h-[210px] min-[768px]:h-[380px] min-[992px]:h-[560px] bg-[#d9d9d9] rounded-2xl">
             <img src={play} alt="play video" />
           </div>
         </div>

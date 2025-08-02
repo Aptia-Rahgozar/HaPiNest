@@ -48,7 +48,7 @@ function App() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: true, // ensures animation only happens once
+      once: false, 
     });
   }, []);
 

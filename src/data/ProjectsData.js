@@ -17,7 +17,7 @@ const slides = [
     image: projectCoverSmall02,
     title: "Mobile Finance App",
     subtitle: "A Course Project",
-    url: "/underConstruction",
+    url: "/projects/02",
     mobileApp: true,
   },
   {

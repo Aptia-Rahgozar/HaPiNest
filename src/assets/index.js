@@ -38,6 +38,7 @@ export { default as mobileIconPrimaryDark } from "./icons/mobile-primary-dark.sv
 export { default as processIconPrimaryDark } from "./icons/process-primary-dark.svg";
 export { default as discoverGrayDark } from "./icons/discover-gray-dark.svg";
 export { default as unhappySmiley } from "./icons/unhappy.svg";
+export { default as oneHundredLogo } from "./icons/100-logo.svg";
 
 // IMAGES
 export { default as profilePicture } from "./images/profile-picture.png";
@@ -51,3 +52,5 @@ export { default as project01DesignProcess } from "./images/project-01-design-pr
 export { default as play } from "./images/play.jpg";
 export { default as project01MobileHero } from "./images/project01-mobile-hero.jpg";
 export { default as cone } from "./images/cone.svg";
+export { default as project02MobileHero } from "./images/project02-mobile-hero.jpg";
+export { default as project02DesignProcess } from "./images/project-02-design-process.jpg";

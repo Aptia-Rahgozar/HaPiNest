@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { useLocation, Link } from "react-router";
 import AOS from "aos";
-import "aos/dist/aos.css";
 
 import { useTitle } from "../hooks/useTitle";
 import { CarouselMobile, CarouselTablet, CarouselDesktop } from "../components";
@@ -698,10 +697,10 @@ export const Home = ({ slides, title }) => {
             </span>
           </div>
           <div>
-            <h3 className="text-primaryDark text-[32px] font-medium min-[992px]:mt-12">
+            <h3 className="text-primaryDark text-[32px] font-medium min-[992px]:mt-8">
               Why HaPiNest?
             </h3>
-            <p className="text-myBlack mt-8">
+            <p className="text-myBlack text-[20px] mt-1">
               Hapinest Design comes from the first two letters of my first and
               last name (Ha + Pi), but its resemblance to the word Happy was
               what truly inspired the choice. To me, UI/UX design is not just
@@ -714,10 +713,10 @@ export const Home = ({ slides, title }) => {
               because I envision something bigger. One day, I hope Hapinest
               Design will evolve into a collaborative studio — a space where a
               team of designers, developers, and thinkers come together to shape
-              complete experiences from start to finish. So this is just the
-              beginning.
+              complete experiences from start to finish.{" "}
+              <span className="font-bold">So this is just the beginning.</span>
             </p>
-            <div className="flex items-center mt-12">
+            <div className="flex items-center mt-6">
               <span className="text-primaryDark text-[24px] mr-6">
                 Welcome to the nest.
               </span>
