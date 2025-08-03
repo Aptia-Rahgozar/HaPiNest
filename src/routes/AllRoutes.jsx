@@ -4,8 +4,8 @@ import {
   Home,
   Projects,
   AboutMe,
-  Project01,
-  Project02,
+  ProjectVisitech,
+  Project100,
   PageNotFound,
   UnderConstruction,
 } from "../pages";
@@ -21,8 +21,11 @@ export const AllRoutes = () => {
           path="projects"
           element={<Projects slides={slides} title="Projects" />}
         />
-        <Route path="projects/01" element={<Project01 title="Project 01" />} />
-        <Route path="projects/02" element={<Project02 title="Project02" />} />
+        <Route
+          path="projects/visitech"
+          element={<ProjectVisitech title="Visitech" />}
+        />
+        <Route path="projects/100" element={<Project100 title="100" />} />
         <Route path="aboutMe" element={<AboutMe title="About Me" />} />
         <Route
           path="underConstruction"

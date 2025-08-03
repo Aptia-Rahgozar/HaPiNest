@@ -42,15 +42,15 @@ export { default as oneHundredLogo } from "./icons/100-logo.svg";
 
 // IMAGES
 export { default as profilePicture } from "./images/profile-picture.png";
-export { default as projectCoverSmall01 } from "./images/project-cover-small-01.jpg";
-export { default as projectCoverSmall02 } from "./images/project-cover-small-02.jpg";
-export { default as projectCoverSmall03 } from "./images/project-cover-small-03.jpg";
-export { default as projectCoverSmall04 } from "./images/project-cover-small-04.jpg";
+export { default as projectCoverSmallVisitech } from "./images/project-cover-small-visitech.jpg";
+export { default as projectCoverSmall100 } from "./images/project-cover-small-100.jpg";
+export { default as projectCoverSmallPersica } from "./images/project-cover-small-persica.jpg";
+export { default as projectCoverSmallHaPiNest } from "./images/project-cover-small-hapinest.jpg";
 export { default as profilePictureLarge } from "./images/profile-picture-large.jpg";
 export { default as nest } from "./images/nest.jpg";
-export { default as project01DesignProcess } from "./images/project-01-design-process.jpg";
+export { default as projectVisitechDesignProcess } from "./images/project-visitech-design-process.jpg";
 export { default as play } from "./images/play.jpg";
-export { default as project01MobileHero } from "./images/project01-mobile-hero.jpg";
+export { default as projectVisitechMobileHero } from "./images/project-visitech-mobile-hero.jpg";
 export { default as cone } from "./images/cone.svg";
-export { default as project02MobileHero } from "./images/project02-mobile-hero.jpg";
-export { default as project02DesignProcess } from "./images/project-02-design-process.jpg";
+export { default as project100MobileHero } from "./images/project-100-mobile-hero.jpg";
+export { default as project100DesignProcess } from "./images/project-100-design-process.jpg";

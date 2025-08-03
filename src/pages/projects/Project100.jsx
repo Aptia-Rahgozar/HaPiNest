@@ -15,17 +15,22 @@ import {
   Goal,
   MonitorPlay,
   Telescope,
+  ScanSearch,
+  ClipboardCheck,
+  Waypoints,
+  MonitorCog,
 } from "lucide-react";
 
 import {
   mobileIconPrimaryDark,
   processIconPrimaryDark,
-  project01DesignProcess,
+  project100DesignProcess,
   play,
-  project01MobileHero,
+  project100MobileHero,
+  oneHundredLogo,
 } from "../../assets";
 
-export const Project01 = ({ title }) => {
+export const Project100 = ({ title }) => {
   useTitle(title);
   const [activeButton, setActiveButton] = useState("overview");
   const [activeBtn, setActiveBtn] = useState("problem");
@@ -89,12 +94,11 @@ export const Project01 = ({ title }) => {
       const containerRect = container.getBoundingClientRect();
       const sections = [
         "overview",
-        "discover",
-        "define",
-        "ideate",
-        "design",
-        "prototype",
-        "test",
+        "analysis",
+        "moodBoard",
+        "siteMap",
+        "designSystem",
+        "uIDesign",
       ];
 
       for (const sec of sections) {
@@ -169,44 +173,49 @@ export const Project01 = ({ title }) => {
           {/* Hero (Mobile) */}
           <div className="min-[768px]:hidden rounded-2xl mb-4 shadow-myShadow">
             <img
-              src={project01MobileHero}
+              src={project100MobileHero}
               alt="project 1 hero"
               className="rounded-2xl"
             />
           </div>
           {/* Introduction (Mobile) */}
-          <div className="p-4 bg-secondaryPink mx-auto min-[768px]:mx-0 shadow-myShadow rounded-2xl">
-            <div className="flex items-center mb-2.5">
-              <span>
-                <img
-                  src={mobileIconPrimaryDark}
-                  alt="mobile icon"
-                  className="min-[768px]:w-7 min-[992px]:w-8"
-                />
-              </span>
-              <h1 className="text-primaryDark text-[20px] min-[768px]:text-[26px] min-[992px]:text-[34px] font-bold mx-2">
-                Mobile App
-              </h1>
-              <span className="text-myBlack min-[768px]:text-[20px] min-[992px]:text-[22px]">
-                (A Course Project)
-              </span>
+          <div className="px-4 py-2 bg-secondaryPink mx-auto min-[768px]:mx-0 shadow-myShadow rounded-2xl">
+            <div className="flex justify-between mb-2">
+              <div className="flex flex-wrap items-center mb-2.5">
+                <span>
+                  <img
+                    src={mobileIconPrimaryDark}
+                    alt="mobile icon"
+                    className="min-[768px]:w-7 min-[992px]:w-8"
+                  />
+                </span>
+                <h1 className="text-primaryDark text-[20px] min-[768px]:text-[26px] min-[992px]:text-[34px] font-bold mx-2">
+                  Mobile App
+                </h1>
+                <span className="text-myBlack min-[768px]:text-[20px] min-[992px]:text-[22px]">
+                  (A Course Project)
+                </span>
+              </div>
+              <div className="bg-white rounded-lg p-1 w-[62px] h-[62px]">
+                <img src={oneHundredLogo} alt="100 Logo" />
+              </div>
             </div>
             <div className="min-[992px]:text-[18px]">
               <p className="text-myBlack mb-2.5 leading-3">
                 <span className="font-bold mr-2">Product's Type:</span>
-                <span>Healthcare App</span>
+                <span>Mobile Finance App</span>
               </p>
               <p className="text-myBlack mb-2.5">
-                (Smart and intuitive booking experience for a digital healthcare
-                platform)
+                A user-friendly financial app designed to simplify payments,
+                transfers, and top-ups — all in one place.
               </p>
               <p className="text-myBlack mb-2.5">
                 <span className="font-bold mr-2">Product's Name:</span>
-                <span>Visitech</span>
+                <span>100</span>
               </p>
               <p className="text-myBlack">
                 <span className="font-bold mr-2">My Roll:</span>
-                <span>Product Designer</span>
+                <span>UI Designer</span>
               </p>
             </div>
           </div>
@@ -229,7 +238,7 @@ export const Project01 = ({ title }) => {
               <div
                 id="btn-overview"
                 onClick={() => handleButtonClick("overview")}
-                className={`flex flex-col duration-200 py-1 min-w-[72px] items-center justify-center rounded-xl ${
+                className={`flex flex-col duration-200 py-1 px-2 min-w-fit items-center justify-center rounded-xl ${
                   activeButton === "overview"
                     ? "bg-primaryDark text-white"
                     : "text-grayDark hover:bg-white cursor-pointer"
@@ -239,64 +248,64 @@ export const Project01 = ({ title }) => {
                 <span className="font-medium mt-1">Overview</span>
               </div>
               <div
-                id="btn-discover"
-                onClick={() => handleButtonClick("discover")}
-                className={`flex flex-col duration-200 py-1 min-w-[72px] items-center justify-center rounded-xl ${
-                  activeButton === "discover"
+                id="btn-analysis"
+                onClick={() => handleButtonClick("analysis")}
+                className={`flex flex-col duration-200 py-1 px-2 min-w-fit items-center justify-center rounded-xl ${
+                  activeButton === "analysis"
                     ? "bg-primaryDark text-white"
                     : "text-grayDark hover:bg-white cursor-pointer"
                 }`}
               >
-                <ZoomIn />
-                <span className="font-medium mt-1">Discover</span>
+                <ScanSearch />
+                <span className="font-medium mt-1">Analysis</span>
               </div>
               <div
-                id="btn-define"
-                onClick={() => handleButtonClick("define")}
-                className={`flex flex-col duration-200 py-1 min-w-[72px] items-center justify-center rounded-xl ${
-                  activeButton === "define"
+                id="btn-moodBoard"
+                onClick={() => handleButtonClick("moodBoard")}
+                className={` flex flex-col duration-200 py-1 px-2 min-w-fit items-center justify-center rounded-xl ${
+                  activeButton === "moodBoard"
                     ? "bg-primaryDark text-white"
                     : "text-grayDark hover:bg-white cursor-pointer"
                 }`}
               >
-                <NotebookPen />
-                <span className="font-medium mt-1">Define</span>
+                <ClipboardCheck />
+                <span className="font-medium mt-1">Mood Board</span>
               </div>
               <div
-                id="btn-ideate"
-                onClick={() => handleButtonClick("ideate")}
-                className={`flex flex-col duration-200 py-1 min-w-[72px] items-center justify-center rounded-xl ${
-                  activeButton === "ideate"
+                id="btn-siteMap"
+                onClick={() => handleButtonClick("siteMap")}
+                className={`flex flex-col duration-200 py-1 px-2 min-w-fit items-center justify-center rounded-xl ${
+                  activeButton === "siteMap"
                     ? "bg-primaryDark text-white"
                     : "text-grayDark hover:bg-white cursor-pointer"
                 }`}
               >
-                <Lightbulb />
-                <span className="font-medium mt-1">Ideate</span>
+                <Waypoints />
+                <span className="font-medium mt-1">Site Map</span>
               </div>
               <div
-                id="btn-design"
-                onClick={() => handleButtonClick("design")}
-                className={`flex flex-col duration-200 py-1 min-w-[72px] items-center justify-center rounded-xl ${
-                  activeButton === "design"
+                id="btn-designSystem"
+                onClick={() => handleButtonClick("designSystem")}
+                className={`flex flex-col duration-200 py-1 px-2 min-w-fit items-center justify-center rounded-xl ${
+                  activeButton === "designSystem"
+                    ? "bg-primaryDark text-white"
+                    : "text-grayDark hover:bg-white cursor-pointer"
+                }`}
+              >
+                <MonitorCog />
+                <span className="font-medium mt-1">Design System</span>
+              </div>
+              <div
+                id="btn-uIDesign"
+                onClick={() => handleButtonClick("uIDesign")}
+                className={`flex flex-col duration-200 py-1 px-2 min-w-fit items-center justify-center rounded-xl ${
+                  activeButton === "uIDesign"
                     ? "bg-primaryDark text-white"
                     : "text-grayDark hover:bg-white cursor-pointer"
                 }`}
               >
                 <Palette />
-                <span className="font-medium mt-1">Design</span>
-              </div>
-              <div
-                id="btn-test"
-                onClick={() => handleButtonClick("test")}
-                className={`flex flex-col duration-200 py-1 min-w-[72px] items-center justify-center rounded-xl ${
-                  activeButton === "test"
-                    ? "bg-primaryDark text-white"
-                    : "text-grayDark hover:bg-white cursor-pointer"
-                }`}
-              >
-                <FlaskRound />
-                <span className="font-medium mt-1">Test</span>
+                <span className="font-medium mt-1">UI Design</span>
               </div>
             </div>
           </div>
@@ -312,7 +321,7 @@ export const Project01 = ({ title }) => {
         >
           <div className="relative w-full">
             <img
-              src={project01DesignProcess}
+              src={project100DesignProcess}
               alt="design process"
               className="w-full"
             />
@@ -321,22 +330,25 @@ export const Project01 = ({ title }) => {
               className="absolute top-[0%] w-full h-[1px]"
             ></div>
             <div
-              id="discover"
-              className="absolute top-[16%] w-full h-[1px]"
+              id="analysis"
+              className="absolute top-[12.5%] w-full h-[1px]"
             ></div>
             <div
-              id="define"
-              className="absolute top-[44.2%] w-full h-[1px]"
+              id="moodBoard"
+              className="absolute top-[28.5%] w-full h-[1px]"
             ></div>
             <div
-              id="ideate"
-              className="absolute top-[49.6%] w-full h-[1px]"
+              id="siteMap"
+              className="absolute top-[38.8%] w-full h-[1px]"
             ></div>
             <div
-              id="design"
-              className="absolute top-[52.8%] w-full h-[1px]"
+              id="designSystem"
+              className="absolute top-[46.4%] w-full h-[1px]"
             ></div>
-            <div id="test" className="absolute top-[77%] w-full h-[1px]"></div>
+            <div
+              id="uIDesign"
+              className="absolute top-[56%] w-full h-[1px]"
+            ></div>
           </div>
         </div>
         {/* Project Story Section (Mobile) */}
@@ -397,59 +409,65 @@ export const Project01 = ({ title }) => {
               Problem
             </h3>
             <p>
-              The main issue was the lack of an integrated system to track and
-              manage health between patients and doctors. In today’s busy life,
-              people don’t have enough time to monitor their health consistently
-              or maintain effective communication with healthcare providers.
-              There was a clear need for a simple, accessible, and user-friendly
-              application to support users in staying connected with their
-              doctors and taking control of their well-being.
+              In today’s fast-paced world, digital financial transactions have
+              become a part of everyday life. However, many existing financial
+              apps are complex, difficult to navigate, or lack a user-centered
+              approach. Users need a secure, intuitive, and accessible solution
+              to manage tasks such as card-to-card transfers, bill payments,
+              mobile top-ups, and QR code payments. The "100" app was designed
+              to address this need by creating a simple, seamless, and friendly
+              user experience for both novice and experienced users.
             </p>
             <h3 id="design-process" className="font-semibold mt-4 mb-2">
               Design Process
             </h3>
-            <p>
-              The project followed the Design Thinking approach, progressing
-              through five key stages:
+            <p className="mb-2">
+              The process started with a deep competitive analysis. I reviewed
+              and benchmarked existing financial apps, studying their user flows
+              to understand common design patterns, pain points, and
+              opportunities for improvement.
             </p>
-            <h4 className="font-medium my-1">1. Empahtize</h4>
-            <p>
-              Through initial research, surveys, interviews, and competitor
-              analysis, the team identified the core needs of target users—busy
-              individuals, chronic patients, and non-tech-savvy users.
+
+            <p className="mb-2">
+              Next, I created a comprehensive mood board to define the visual
+              direction and emotional tone of the product. This helped guide key
+              visual decisions throughout the design.
             </p>
-            <h4 className="font-medium my-1">2. Define</h4>
-            <p>
-              Insights from research were categorized, and user personas were
-              created to clarify user goals, pain points, and expectations.
+
+            <p className="mb-2">
+              Based on these insights, I developed a clear sitemap to structure
+              the app’s content and user pathways. This served as the foundation
+              for creating low-fidelity wireframes, which allowed me to test and
+              refine the user experience before committing to high-fidelity
+              visuals.
             </p>
-            <h4 className="font-medium my-1">3. Ideate</h4>
-            <p>
-              Multiple solutions were brainstormed using methods. Ideas were
-              evaluated and refined based on feasibility and user value.
+
+            <p className="mb-2">
+              In parallel with the UI design, I built a complete Design
+              System—defining typography, color palettes, icon sets, grid
+              structures, and reusable components to ensure scalability and
+              visual consistency.
             </p>
-            <h4 className="font-medium my-1">4. Design</h4>
+
             <p>
-              A user flow and information architecture were developed, followed
-              by wireframes and high-fidelity UI designs to bring the concept to
-              life.
+              Finally, I created an interactive prototype and conducted
+              in-person usability testing with real users. Their feedback helped
+              me fine-tune interactions and improve the overall experience based
+              on real-world use.
             </p>
-            <h4 className="font-medium my-1">5. Usability Testing</h4>
-            <p>
-              A prototype was tested with users, feedback was collected, and
-              design iterations were made to improve usability and meet user
-              needs more effectively.
-            </p>
+
             <h3 id="outcome" className="font-semibold mt-4 mb-2">
               Outcome
             </h3>
             <p>
-              The final result was a health management mobile app with a clean,
-              modern interface that helps users track their health, stay in
-              touch with doctors, set medication reminders, log symptoms, and
-              follow personalized health plans. User feedback during the final
-              testing phase was positive, confirming that the design
-              successfully addressed key user needs.
+              "100" was my first end-to-end product design experience and a
+              major milestone in my journey as a UI/UX designer. It taught me
+              how to build a product from the ground up with a systems thinking
+              mindset and a user-first approach. The final result is a clean,
+              modern, and accessible financial app designed to simplify daily
+              transactions. This project provided a strong foundation for future
+              work and reinforced my passion for creating meaningful,
+              user-centered digital experiences
             </p>
           </div>
         </div>
