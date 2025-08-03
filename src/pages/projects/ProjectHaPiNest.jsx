@@ -11,28 +11,28 @@ import {
   Goal,
   MonitorPlay,
   Telescope,
-  ScanSearch,
-  ClipboardCheck,
   Waypoints,
   MonitorCog,
+  Frame,
+  MonitorSmartphone,
 } from "lucide-react";
 
 import {
   mobileIconPrimaryDark,
   processIconPrimaryDark,
-  project100DesignProcess,
   play,
-  project100MobileHero,
-  oneHundredLogo,
+  projectHaPiNestMobileHero,
+  hapinestLogo,
+  projectHaPiNestDesignProcess,
 } from "../../assets";
 
-export const Project100 = ({ title }) => {
+export const ProjectHaPiNest = ({ title }) => {
   useTitle(title);
   const [activeButton, setActiveButton] = useState("overview");
   const [activeBtn, setActiveBtn] = useState("problem");
   const [isProgrammaticScroll, setIsProgrammaticScroll] = useState(false);
 
-  const slide = slides[0];
+  const slide = slides[2];
 
   const handleButtonClick = (sec) => {
     const section = document.getElementById(sec);
@@ -90,11 +90,12 @@ export const Project100 = ({ title }) => {
       const containerRect = container.getBoundingClientRect();
       const sections = [
         "overview",
-        "analysis",
-        "moodBoard",
-        "siteMap",
-        "designSystem",
+        "sitemap",
+        "wireframe",
+
         "uIDesign",
+        "designSystem",
+        "responsive",
       ];
 
       for (const sec of sections) {
@@ -169,7 +170,7 @@ export const Project100 = ({ title }) => {
           {/* Hero (Mobile) */}
           <div className="min-[768px]:hidden rounded-2xl mb-4 shadow-myShadow">
             <img
-              src={project100MobileHero}
+              src={projectHaPiNestMobileHero}
               alt="project 1 hero"
               className="rounded-2xl"
             />
@@ -186,32 +187,32 @@ export const Project100 = ({ title }) => {
                   />
                 </span>
                 <h1 className="text-primaryDark text-[20px] min-[768px]:text-[26px] min-[992px]:text-[34px] font-bold mx-2">
-                  Mobile App
+                  Website
                 </h1>
                 <span className="text-myBlack min-[768px]:text-[20px] min-[992px]:text-[22px]">
-                  (A Course Project)
+                  (A Personal Project)
                 </span>
               </div>
-              <div className="bg-white rounded-lg p-1 w-[62px] h-[62px]">
-                <img src={oneHundredLogo} alt="100 Logo" />
+              <div className="flex items-center bg-white rounded-lg p-1 w-[62px] h-[62px]">
+                <img src={hapinestLogo} alt="HaPiNest Logo" />
               </div>
             </div>
             <div className="min-[992px]:text-[18px]">
               <p className="text-myBlack mb-2.5 leading-3">
                 <span className="font-bold mr-2">Product's Type:</span>
-                <span>Mobile Finance App</span>
+                <span>Portfolio Website</span>
               </p>
               <p className="text-myBlack mb-2.5">
-                A user-friendly financial app designed to simplify payments,
-                transfers, and top-ups — all in one place.
+                A brand-driven portfolio designed to showcase work with clarity,
+                warmth, and structure — across all devices.
               </p>
               <p className="text-myBlack mb-2.5">
                 <span className="font-bold mr-2">Product's Name:</span>
-                <span>100</span>
+                <span>HaPiNestDesign</span>
               </p>
               <p className="text-myBlack">
                 <span className="font-bold mr-2">My Roll:</span>
-                <span>UI Designer</span>
+                <span>UI/UX Designer</span>
               </p>
             </div>
           </div>
@@ -244,34 +245,10 @@ export const Project100 = ({ title }) => {
                 <span className="font-medium mt-1">Overview</span>
               </div>
               <div
-                id="btn-analysis"
-                onClick={() => handleButtonClick("analysis")}
+                id="btn-sitemap"
+                onClick={() => handleButtonClick("sitemap")}
                 className={`flex flex-col duration-200 py-1 px-2 min-w-fit items-center justify-center rounded-xl ${
-                  activeButton === "analysis"
-                    ? "bg-primaryDark text-white"
-                    : "text-grayDark hover:bg-white cursor-pointer"
-                }`}
-              >
-                <ScanSearch />
-                <span className="font-medium mt-1">Analysis</span>
-              </div>
-              <div
-                id="btn-moodBoard"
-                onClick={() => handleButtonClick("moodBoard")}
-                className={` flex flex-col duration-200 py-1 px-2 min-w-fit items-center justify-center rounded-xl ${
-                  activeButton === "moodBoard"
-                    ? "bg-primaryDark text-white"
-                    : "text-grayDark hover:bg-white cursor-pointer"
-                }`}
-              >
-                <ClipboardCheck />
-                <span className="font-medium mt-1">Mood Board</span>
-              </div>
-              <div
-                id="btn-siteMap"
-                onClick={() => handleButtonClick("siteMap")}
-                className={`flex flex-col duration-200 py-1 px-2 min-w-fit items-center justify-center rounded-xl ${
-                  activeButton === "siteMap"
+                  activeButton === "sitemap"
                     ? "bg-primaryDark text-white"
                     : "text-grayDark hover:bg-white cursor-pointer"
                 }`}
@@ -280,16 +257,16 @@ export const Project100 = ({ title }) => {
                 <span className="font-medium mt-1">Site Map</span>
               </div>
               <div
-                id="btn-designSystem"
-                onClick={() => handleButtonClick("designSystem")}
-                className={`flex flex-col duration-200 py-1 px-2 min-w-fit items-center justify-center rounded-xl ${
-                  activeButton === "designSystem"
+                id="btn-wireframe"
+                onClick={() => handleButtonClick("wireframe")}
+                className={` flex flex-col duration-200 py-1 px-2 min-w-fit items-center justify-center rounded-xl ${
+                  activeButton === "wireframe"
                     ? "bg-primaryDark text-white"
                     : "text-grayDark hover:bg-white cursor-pointer"
                 }`}
               >
-                <MonitorCog />
-                <span className="font-medium mt-1">Design System</span>
+                <Frame />
+                <span className="font-medium mt-1">Wireframe</span>
               </div>
               <div
                 id="btn-uIDesign"
@@ -300,8 +277,32 @@ export const Project100 = ({ title }) => {
                     : "text-grayDark hover:bg-white cursor-pointer"
                 }`}
               >
-                <Palette />
+                <MonitorCog />
                 <span className="font-medium mt-1">UI Design</span>
+              </div>
+              <div
+                id="btn-designSystem"
+                onClick={() => handleButtonClick("designSystem")}
+                className={`flex flex-col duration-200 py-1 px-2 min-w-fit items-center justify-center rounded-xl ${
+                  activeButton === "designSystem"
+                    ? "bg-primaryDark text-white"
+                    : "text-grayDark hover:bg-white cursor-pointer"
+                }`}
+              >
+                <Palette />
+                <span className="font-medium mt-1">Design System</span>
+              </div>
+              <div
+                id="btn-responsive"
+                onClick={() => handleButtonClick("responsive")}
+                className={`flex flex-col duration-200 py-1 px-2 min-w-fit items-center justify-center rounded-xl ${
+                  activeButton === "responsive"
+                    ? "bg-primaryDark text-white"
+                    : "text-grayDark hover:bg-white cursor-pointer"
+                }`}
+              >
+                <MonitorSmartphone />
+                <span className="font-medium mt-1">Responsive</span>
               </div>
             </div>
           </div>
@@ -317,8 +318,8 @@ export const Project100 = ({ title }) => {
         >
           <div className="relative w-full">
             <img
-              src={project100DesignProcess}
-              alt="design process"
+              src={projectHaPiNestDesignProcess}
+              alt="HaPiNest design process"
               className="w-full"
             />
             <div
@@ -326,24 +327,24 @@ export const Project100 = ({ title }) => {
               className="absolute top-[0%] w-full h-[1px]"
             ></div>
             <div
-              id="analysis"
-              className="absolute top-[12.5%] w-full h-[1px]"
+              id="sitemap"
+              className="absolute top-[19.3%] w-full h-[1px]"
             ></div>
             <div
-              id="moodBoard"
-              className="absolute top-[28.5%] w-full h-[1px]"
-            ></div>
-            <div
-              id="siteMap"
-              className="absolute top-[38.8%] w-full h-[1px]"
-            ></div>
-            <div
-              id="designSystem"
-              className="absolute top-[46.4%] w-full h-[1px]"
+              id="wireframe"
+              className="absolute top-[27%] w-full h-[1px]"
             ></div>
             <div
               id="uIDesign"
-              className="absolute top-[56%] w-full h-[1px]"
+              className="absolute top-[35.8%] w-full h-[1px]"
+            ></div>
+            <div
+              id="designSystem"
+              className="absolute top-[54%] w-full h-[1px]"
+            ></div>
+            <div
+              id="responsive"
+              className="absolute top-[70%] w-full h-[1px]"
             ></div>
           </div>
         </div>
@@ -405,65 +406,58 @@ export const Project100 = ({ title }) => {
               Problem
             </h3>
             <p>
-              In today’s fast-paced world, digital financial transactions have
-              become a part of everyday life. However, many existing financial
-              apps are complex, difficult to navigate, or lack a user-centered
-              approach. Users need a secure, intuitive, and accessible solution
-              to manage tasks such as card-to-card transfers, bill payments,
-              mobile top-ups, and QR code payments. The "100" app was designed
-              to address this need by creating a simple, seamless, and friendly
-              user experience for both novice and experienced users.
+              For many designers and developers, creating a personal website
+              that effectively showcases their skills, personality, and body of
+              work is a major challenge. It needs to be more than visually
+              appealing—it must also be structured, intuitive, and scalable. The
+              goal of the HaPiNest project was to build a portfolio site that
+              communicates both my creative identity and professional experience
+              in a clear and meaningful way.
             </p>
             <h3 id="design-process" className="font-semibold mt-4 mb-2">
               Design Process
             </h3>
             <p className="mb-2">
-              The process started with a deep competitive analysis. I reviewed
-              and benchmarked existing financial apps, studying their user flows
-              to understand common design patterns, pain points, and
-              opportunities for improvement.
+              The process began with a clear vision: to build a personal brand
+              and platform that feels like a "home" for my design journey. The
+              name HaPiNest was created by combining elements of my name,
+              symbolizing a digital nest where my creativity and work live.
             </p>
 
             <p className="mb-2">
-              Next, I created a comprehensive mood board to define the visual
-              direction and emotional tone of the product. This helped guide key
-              visual decisions throughout the design.
+              I started by mapping out the website structure using a site map,
+              followed by creating wireframes to explore layout ideas and how
+              content would be presented.
             </p>
 
             <p className="mb-2">
-              Based on these insights, I developed a clear sitemap to structure
-              the app’s content and user pathways. This served as the foundation
-              for creating low-fidelity wireframes, which allowed me to test and
-              refine the user experience before committing to high-fidelity
-              visuals.
+              Once the core structure was defined, I moved into UI design,
+              iterating through visual directions, refining components, and
+              gathering feedback to enhance usability and visual clarity.
             </p>
 
             <p className="mb-2">
-              In parallel with the UI design, I built a complete Design
-              System—defining typography, color palettes, icon sets, grid
-              structures, and reusable components to ensure scalability and
-              visual consistency.
+              Alongside UI development, I built a full Design System & Style
+              Guide—defining typography, color schemes, icons, and reusable
+              components. This ensured consistency across the site and created a
+              scalable foundation for future updates.
             </p>
 
             <p>
-              Finally, I created an interactive prototype and conducted
-              in-person usability testing with real users. Their feedback helped
-              me fine-tune interactions and improve the overall experience based
-              on real-world use.
+              Finally, I designed responsive layouts for desktop, tablet, and
+              mobile to ensure a seamless user experience across all devices.
             </p>
 
             <h3 id="outcome" className="font-semibold mt-4 mb-2">
               Outcome
             </h3>
             <p>
-              "100" was my first end-to-end product design experience and a
-              major milestone in my journey as a UI/UX designer. It taught me
-              how to build a product from the ground up with a systems thinking
-              mindset and a user-first approach. The final result is a clean,
-              modern, and accessible financial app designed to simplify daily
-              transactions. This project provided a strong foundation for future
-              work and reinforced my passion for creating meaningful,
-              user-centered digital experiences
+              The HaPiNest project became more than just a portfolio—it evolved
+              into a personal digital space that reflects who I am as a
+              designer. Through this process, I deepened my understanding of
+              structured design thinking, scalable systems, and brand-centered
+              UI design. The result is a responsive, polished website that
+              introduces my work and voice to the world.
             </p>
           </div>
         </div>

@@ -24,7 +24,7 @@ const slides = [
     image: projectCoverSmallHaPiNest,
     title: "Website",
     subtitle: "HaPiNest, a personal portfolio",
-    url: "/underConstruction",
+    url: "/projects/haPiNest",
     mobileApp: false,
   },
   {

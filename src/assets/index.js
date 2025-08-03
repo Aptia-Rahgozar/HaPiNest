@@ -54,3 +54,5 @@ export { default as projectVisitechMobileHero } from "./images/project-visitech-
 export { default as cone } from "./images/cone.svg";
 export { default as project100MobileHero } from "./images/project-100-mobile-hero.jpg";
 export { default as project100DesignProcess } from "./images/project-100-design-process.jpg";
+export { default as projectHaPiNestMobileHero } from "./images/project-hapinest-mobile-hero.jpg";
+export { default as projectHaPiNestDesignProcess } from "./images/project-hapinest-design-process.jpg";
