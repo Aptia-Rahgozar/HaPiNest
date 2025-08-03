@@ -70,7 +70,7 @@ export const Projects = ({ slides, title }) => {
             alt="monitor icon"
             className="w-6 mr-2"
           />
-          <span className="min-[768px]:text-[20px]">Landing Pages</span>
+          <span className="min-[768px]:text-[20px]">Websites</span>
         </button>
       </div>
       <div>
