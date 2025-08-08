@@ -198,7 +198,7 @@ export const Project100 = ({ title }) => {
             </div>
             <div className="min-[992px]:text-[18px]">
               <p className="text-myBlack mb-2.5 leading-3">
-                <span className="font-bold mr-2">Product's Type:</span>
+                <span className="font-bold mr-2">Product Type:</span>
                 <span>Mobile Finance App</span>
               </p>
               <p className="text-myBlack mb-2.5">
@@ -206,11 +206,11 @@ export const Project100 = ({ title }) => {
                 transfers, and top-ups — all in one place.
               </p>
               <p className="text-myBlack mb-2.5">
-                <span className="font-bold mr-2">Product's Name:</span>
+                <span className="font-bold mr-2">Product Name:</span>
                 <span>100</span>
               </p>
               <p className="text-myBlack">
-                <span className="font-bold mr-2">My Roll:</span>
+                <span className="font-bold mr-2">My Role:</span>
                 <span>UI Designer</span>
               </p>
             </div>
@@ -431,7 +431,7 @@ export const Project100 = ({ title }) => {
             </p>
 
             <p className="mb-2">
-              Based on these insights, I developed a clear sitemap to structure
+              Based on these insights, I developed a clear site map to structure
               the app’s content and user pathways. This served as the foundation
               for creating low-fidelity wireframes, which allowed me to test and
               refine the user experience before committing to high-fidelity
@@ -439,8 +439,8 @@ export const Project100 = ({ title }) => {
             </p>
 
             <p className="mb-2">
-              In parallel with the UI design, I built a complete Design
-              System—defining typography, color palettes, icon sets, grid
+              In parallel with the UI design, I built a complete design
+              system—defining typography, color palettes, icon sets, grid
               structures, and reusable components to ensure scalability and
               visual consistency.
             </p>
@@ -475,7 +475,7 @@ export const Project100 = ({ title }) => {
               <MonitorPlay className="min-[768px]:w-7 min-[768px]:h-7 min-[992px]:w-8 min-[992px]:h-8" />
             </span>
             <span className="text-[20px] min-[768px]:text-[26px] min-[992px]:text-[34px] font-medium text-primaryDark ml-2">
-              How it works!
+              How It Works!
             </span>
           </h2>
           <div className="flex items-center justify-center h-[210px] min-[768px]:h-[380px] min-[992px]:h-[560px] bg-[#d9d9d9] rounded-2xl">

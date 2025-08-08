@@ -238,7 +238,7 @@ export const Home = ({ slides, title }) => {
 
         {/* GET TO KNOW ME SECTION (DESKTOP) */}
         <section className="hidden md:block">
-          <div className="md:flex bg-white p-6 gap-6 rounded-2xl mt-16 border border-grayLighter shadow-myShadow">
+          <div className="md:flex bg-white p-6 gap-4 rounded-2xl mt-16 border border-grayLighter shadow-myShadow">
             <div className="flex-1 flex flex-col pt-2">
               {/* Top fixed content */}
               <h3 className="flex items-center">
@@ -348,11 +348,16 @@ export const Home = ({ slides, title }) => {
                 <p className="mt-2 leading-5">
                   I’m Habibeh — a UI/UX designer with a background in graphic
                   design and several years of experience in the creative field.
-                  {<br />}My passion for color, composition, and visual
-                  storytelling started in graphic design, but discovering UI/UX
-                  shifted my perspective. I realized that great design is not
-                  only about how things look — but also how they work and feel.
-                  {<br />}
+                </p>
+
+                <p className="mt-2 leading-5">
+                  My passion for color, composition, and visual storytelling
+                  started in graphic design, but discovering UI/UX shifted my
+                  perspective. I realized that great design is not only about
+                  how things look, but also how they work and feel.
+                </p>
+
+                <p className="mt-2 leading-5">
                   I’ve completed two advanced courses in UI Design and Product
                   Design with some of the best instructors in the field. These
                   experiences helped me sharpen both my visual skills and
@@ -363,7 +368,7 @@ export const Home = ({ slides, title }) => {
                 </h4>
                 <p className="mt-2 leading-5">
                   {" "}
-                  enjoy creating designs that are intuitive, aesthetic, and
+                  I enjoy creating designs that are intuitive, aesthetic, and
                   user-focused. I'm always exploring new trends, tools, and
                   technologies — especially AI — to enhance both my workflow and
                   the quality of my work.
@@ -384,7 +389,9 @@ export const Home = ({ slides, title }) => {
                 and my ability to work with modern design tools give me a unique
                 edge as a product designer. I bring together creativity and
                 logic to craft experiences that are not only beautiful but also
-                meaningful.{<br />}
+                meaningful.
+              </p>
+              <p className="mt-2 text-primaryLight leading-5">
                 With a solid foundation in visual design, user thinking, and
                 practical tools, I can deliver digital products that truly
                 connect with people — from concept to execution.
@@ -393,17 +400,17 @@ export const Home = ({ slides, title }) => {
                 href="/resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center button-primary-big mx-auto mt-6"
+                className="flex items-center justify-center button-primary-big mx-auto mt-8"
               >
                 <img src={downloadIcon} alt="download icon" />
                 <span className="text-primaryLight text-[16px] font-medium ml-1">
-                  Download Resume
+                  Download Résumé
                 </span>
               </a>
             </div>
           </div>
           {/* WHAT MAKES ME DIFFERENT (TABLET) */}
-          <div className="flex items-center bg-secondaryPink rounded-2xl mt-4 py-4 px-6 min-[992px]:hidden">
+          <div className="flex items-center bg-secondaryPink rounded-2xl mt-4 py-6 px-6 min-[992px]:hidden">
             <div className=" min-w-fit mr-7">
               <img
                 src={hapinestSmiley}
@@ -446,8 +453,8 @@ export const Home = ({ slides, title }) => {
             </h3>
           </div>
           <div className="mb-4 mt-2 leading-5">
-            I'm Habibeh, a UI/UX designer with a background in graphic design. I
-            create user-centered, visually engaging interfaces with a strong eye
+            I'm Habibeh, a UI/UX designer with a graphic design background. I
+            create user-centered, visually engaging interfaces with a keen eye
             for detail and usability ...
           </div>
           <Link
@@ -465,13 +472,14 @@ export const Home = ({ slides, title }) => {
           <div className="flex items-center">
             <img src={galleryIconPrimaryDark} alt="profile icon" />
             <h3 className="font-about-large text-primaryDark ml-1">
-              Explore my projects
+              Explore My Projects
             </h3>
           </div>
           <div className="mb-4 mt-2 leading-5">
             <p>
-              Explore some of the projects I've worked on - each one tells a
-              story of user needs, thoughtful design and real problem-solving.
+              Explore some of the projects I’ve worked on — each one tells a
+              unique story of user needs, thoughtful design, and real
+              problem-solving.
             </p>
           </div>
         </div>
@@ -499,25 +507,27 @@ export const Home = ({ slides, title }) => {
           />
           <p className="text-[20px] mt-5">www.hapinestdesign.com</p>
         </div>
-        <div className=" max-w-[312px] p-4 mx-auto mt-4 rounded-2xl bg-white shadow-myShadow border border-grayLighter">
+        <div className=" max-w-[312px] p-4 mx-auto mt-4 rounded-2xl bg-white shadow-myShadow border border-grayLighter leading-5">
           <h3 className="text-[20px] font-bold text-myBlack">Why HaPiNest?</h3>
           <p className="mt-2 text-myBlack">
-            Hapinest Design comes from the first two letters of my first and
-            last name (Ha + Pi),but its resemblance to the word Happy was what
-            truly inspired the choice. To me, UI/UX design is not just about
-            arranging visual elements — it’s about building a safe,
-            human-centered, and delightful space. A kind of nest for ideas and
-            user experiences. At Hapinest Design, every pixel is placed with
-            care and crafted with heart. It’s a small home for designs that are
-            functional, beautiful, and deeply human. But this isn’t just a
-            personal portfolio. I chose not to name this site after myself
-            because I envision something bigger. One day, I hope Hapinest Design
-            will evolve into a collaborative studio — a space where a team of
-            designers, developers, and thinkers come together to shape complete
-            experiences from start to finish.
+            "Hapinest" comes from combining the first syllables of my first and
+            last names (<span className="italic">Ha</span> +{" "}
+            <span className="italic">Pi</span>), but its resemblance to the word{" "}
+            <span className="italic">happy</span> was what truly inspired the
+            choice. To me, UI/UX design is not just about arranging visual
+            elements — it’s about building a human-centered, welcoming and
+            delightful space. A safe <span className="italic">nest</span> for
+            ideas and user experiences. At Hapinest Design, every pixel is
+            placed with care and crafted with heart. It’s a small home for
+            designs that are functional, beautiful, and deeply human. But this
+            isn’t just a personal portfolio. I chose not to name this site after
+            myself because I envision something bigger. One day, I hope Hapinest
+            Design will evolve into a collaborative studio — a space where a
+            team of designers, developers, and thinkers come together to shape
+            complete experiences from start to finish.{" "}
           </p>
           <p className="text-myBlack font-bold">
-            So, this is just the beginning.
+            So, this is just the beginning!
           </p>
           <p className="mt-6 text-center text-primaryDark text-[24px]">
             Welcome to the nest.
@@ -545,10 +555,10 @@ export const Home = ({ slides, title }) => {
             data-aos-delay="100"
             className="w-[352px] h-[264px] bg-white rounded-2xl border border-grayLighter shadow-myShadow pt-8 overflow-auto"
           >
-            <h3 className="px-14 mb-4 text-[24px] font-bold text-primaryDark">
+            <h3 className="px-14 mb-4 text-[22px] min-[992px]:text-[24px] font-bold text-primaryDark">
               UX Skills
             </h3>
-            <ul className="px-14 list-disc text-[20px] text-primaryDark leading-6">
+            <ul className="px-14 list-disc text-[18px] min-[992px]:text-[20px] text-primaryDark leading-6">
               <li>User Research</li>
               <li>Design Thinking</li>
               <li>Wireframing</li>
@@ -562,10 +572,10 @@ export const Home = ({ slides, title }) => {
             data-aos-delay="300"
             className="w-[352px] h-[264px] bg-white rounded-2xl border border-grayLighter shadow-myShadow pt-8 overflow-auto"
           >
-            <h3 className="px-14 mb-4 text-[24px] font-bold text-primaryDark">
+            <h3 className="px-14 mb-4 text-[22px] min-[992px]:text-[24px] font-bold text-primaryDark">
               UI Skills
             </h3>
-            <ul className="px-14 list-disc  text-[20px] text-primaryDark leading-6">
+            <ul className="px-14 list-disc text-[18px] min-[992px]:text-[20px] text-primaryDark leading-6">
               <li>Visual Design</li>
               <li>Layout & Typography</li>
               <li>Color Theory</li>
@@ -579,11 +589,11 @@ export const Home = ({ slides, title }) => {
             data-aos-delay="500"
             className="w-[352px] h-[264px] bg-white rounded-2xl border border-grayLighter shadow-myShadow pt-8 overflow-auto"
           >
-            <h3 className="px-14 mb-4  text-[24px] font-bold text-primaryDark">
+            <h3 className="px-14 mb-4 text-[22px] min-[992px]:text-[24px] font-bold text-primaryDark">
               Soft Skills
             </h3>
-            <ul className="px-14 list-disc text-[20px] text-primaryDark leading-6">
-              <li>Problem-solving</li>
+            <ul className="px-14 list-disc text-[18px] min-[992px]:text-[20px] text-primaryDark leading-6">
+              <li>Problem-Solving</li>
               <li>Creativity</li>
               <li>Team Collaboration</li>
               <li>Time Management</li>
@@ -606,7 +616,7 @@ export const Home = ({ slides, title }) => {
         </p>
         <div className="flex flex-col max-w-[1104px] mt-6 mx-auto p-6 bg-primaryLight rounded-2xl">
           <div className="flex gap-6">
-            <div className="flex flex-col bg-white flex-1 h-[264px] justify-center items-center">
+            <div className="flex flex-col bg-white flex-1 h-[230px] min-[992px]:h-[264px] justify-center items-center">
               <img
                 data-aos="zoom-in"
                 data-aos-delay="100"
@@ -617,7 +627,7 @@ export const Home = ({ slides, title }) => {
                 Figma
               </span>
             </div>
-            <div className="flex flex-col bg-white flex-1 h-[264px] justify-center items-center">
+            <div className="flex flex-col bg-white flex-1 h-[230px] min-[992px]:h-[264px] justify-center items-center">
               <img
                 data-aos="zoom-in"
                 data-aos-delay="700"
@@ -628,7 +638,7 @@ export const Home = ({ slides, title }) => {
                 Illustrator
               </span>
             </div>
-            <div className="flex flex-col bg-white flex-1 h-[264px] justify-center items-center">
+            <div className="flex flex-col bg-white flex-1 h-[230px] min-[992px]:h-[264px] justify-center items-center">
               <img
                 data-aos="zoom-in"
                 data-aos-delay="400"
@@ -641,7 +651,7 @@ export const Home = ({ slides, title }) => {
             </div>
           </div>
           <div className="flex gap-6 mt-6">
-            <div className="flex flex-col bg-white flex-1 h-[264px] justify-center items-center">
+            <div className="flex flex-col bg-white flex-1 h-[230px] min-[992px]:h-[264px] justify-center items-center">
               <img
                 data-aos="zoom-in"
                 data-aos-delay="700"
@@ -652,7 +662,7 @@ export const Home = ({ slides, title }) => {
                 Miro
               </span>
             </div>
-            <div className="flex flex-col bg-white flex-1 h-[264px] justify-center items-center">
+            <div className="flex flex-col bg-white flex-1 h-[230px] min-[992px]:h-[264px] justify-center items-center">
               <img
                 data-aos="zoom-in"
                 data-aos-delay="400"
@@ -663,7 +673,7 @@ export const Home = ({ slides, title }) => {
                 Figjam
               </span>
             </div>
-            <div className="flex flex-col bg-white flex-1 h-[264px] justify-center items-center">
+            <div className="flex flex-col bg-white flex-1 h-[230px] min-[992px]:h-[264px] justify-center items-center">
               <img
                 data-aos="zoom-in"
                 data-aos-delay="100"
@@ -674,7 +684,7 @@ export const Home = ({ slides, title }) => {
                 Useberry
               </span>
             </div>
-            <div className="flex flex-col justify-center items-center flex-1 text-white h-[264px] text-[96px] font-[275]">
+            <div className="flex flex-col justify-center items-center flex-1 text-white h-[230px] min-[992px]:h-[264px] text-[64px] min-[992px]:text-[96px] font-[275]">
               + AI
             </div>
           </div>
@@ -700,21 +710,23 @@ export const Home = ({ slides, title }) => {
             <h3 className="text-primaryDark text-[32px] font-medium min-[992px]:mt-8">
               Why HaPiNest?
             </h3>
-            <p className="text-myBlack text-[20px] mt-1">
-              Hapinest Design comes from the first two letters of my first and
-              last name (Ha + Pi), but its resemblance to the word Happy was
-              what truly inspired the choice. To me, UI/UX design is not just
-              about arranging visual elements — it’s about building a safe,
-              human-centered, and delightful space. A kind of nest for ideas and
-              user experiences. At Hapinest Design, every pixel is placed with
-              care and crafted with heart. It’s a small home for designs that
-              are functional, beautiful, and deeply human. But this isn’t just a
-              personal portfolio. I chose not to name this site after myself
-              because I envision something bigger. One day, I hope Hapinest
-              Design will evolve into a collaborative studio — a space where a
-              team of designers, developers, and thinkers come together to shape
-              complete experiences from start to finish.{" "}
-              <span className="font-bold">So this is just the beginning.</span>
+            <p className="text-myBlack text-[18px] leading-6 min-[992px]:leading-normal min-[992px]:text-[20px] mt-1">
+              "Hapinest" comes from combining the first syllables of my first
+              and last names (<span className="italic">Ha</span> +{" "}
+              <span className="italic">Pi</span>), but its resemblance to the
+              word <span className="italic">happy</span> was what truly inspired
+              the choice. To me, UI/UX design is not just about arranging visual
+              elements — it’s about building a human-centered, welcoming and
+              delightful space. A safe <span className="italic">nest</span> for
+              ideas and user experiences. At Hapinest Design, every pixel is
+              placed with care and crafted with heart. It’s a small home for
+              designs that are functional, beautiful, and deeply human. But this
+              isn’t just a personal portfolio. I chose not to name this site
+              after myself because I envision something bigger. One day, I hope
+              Hapinest Design will evolve into a collaborative studio — a space
+              where a team of designers, developers, and thinkers come together
+              to shape complete experiences from start to finish.{" "}
+              <span className="font-bold">So this is just the beginning!</span>
             </p>
             <div className="flex items-center mt-6">
               <span className="text-primaryDark text-[24px] mr-6">

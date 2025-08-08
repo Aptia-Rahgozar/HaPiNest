@@ -25,7 +25,7 @@ export const Footer = () => {
   };
 
   return (
-    <div className="bg-primaryLight pt-10 md:pt-16 pb-18 md:pb-24 mt-8">
+    <div className="bg-primaryLight pt-10 md:pt-16 pb-10 md:pb-16 mt-8">
       <div className="flex justify-center font-footer text-white">
         <Link to="/projects">Projects</Link>
         <a
@@ -106,6 +106,9 @@ export const Footer = () => {
           />
         </a>
       </div>
+      <p className="text-white text-center mt-18">
+        © 2025 Hapinest Design. All rights reserved.
+      </p>
     </div>
   );
 };

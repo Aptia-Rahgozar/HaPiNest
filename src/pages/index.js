@@ -4,5 +4,6 @@ export { AboutMe } from "./AboutMe";
 export { ProjectVisitech } from "./projects/ProjectVisitech";
 export { Project100 } from "./projects/Project100";
 export { ProjectHaPiNest } from "./projects/ProjectHaPiNest";
+export { VariousProjects } from "./projects/VariousProjects";
 export { PageNotFound } from "./PageNotFound";
 export { UnderConstruction } from "./UnderConstruction";

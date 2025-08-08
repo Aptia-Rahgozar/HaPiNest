@@ -7,6 +7,7 @@ import {
   ProjectVisitech,
   Project100,
   ProjectHaPiNest,
+  VariousProjects,
   PageNotFound,
   UnderConstruction,
 } from "../pages";
@@ -30,6 +31,10 @@ export const AllRoutes = () => {
         <Route
           path="projects/haPiNest"
           element={<ProjectHaPiNest title="HaPiNest" />}
+        />
+        <Route
+          path="projects/variousProjects"
+          element={<VariousProjects title="Various Projects" />}
         />
         <Route path="aboutMe" element={<AboutMe title="About Me" />} />
         <Route

@@ -34,11 +34,11 @@ export const Projects = ({ slides, title }) => {
           className="mr-2 min-[768px]:w-8"
         />
         <span className="text-[20px] min-[768px]:text-[32px] font-bold md:font-medium text-primaryDark">
-          Projects Gallery
+          Project Gallery
         </span>
       </h1>
       <p className="text-myBlack min-[768px]:text-[20px] mt-4">
-        Explore some of the projects I’ve worked on — each one tells a story of
+        Explore some of the projects I’ve worked on — each one tells a unique story of
         user needs, thoughtful design and real problem-solving.{" "}
       </p>
       <div className="flex bg-grayLighter p-2 min-[768px]:px-10 min-[992px]:px-12 min-[768px]:py-3 gap-2 min-[768px]:gap-10 min-[992px]:gap-12 mt-4 min-[768px]:mt-12 mb-6 rounded-2xl">

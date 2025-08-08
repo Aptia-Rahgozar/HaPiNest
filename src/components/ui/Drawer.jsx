@@ -82,7 +82,7 @@ export const Drawer = ({ isDrawerOpen, setIsDrawerOpen }) => {
         <a onClick={handleMyWorkClick} className="w-fit mb-10 cursor-pointer">
           <div className="flex items-center">
             <img src={galleryIcon} alt="gallery icon" />
-            <span className="ml-2">My Work</span>
+            <span className="ml-2">Projects</span>
           </div>
         </a>
 

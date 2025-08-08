@@ -55,7 +55,7 @@ export const CarouselDesktop = ({ slides }) => {
       </div>
 
       {/* Indicators */}
-      <div className="flex justify-center mt-4">
+      <div className="flex justify-center mt-6">
         {Array.from({ length: totalSteps }).map((_, idx) => (
           <span
             key={idx}

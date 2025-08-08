@@ -50,19 +50,23 @@ export const AboutMe = ({ title }) => {
         </div>
 
         <div className="mt-4 p-4 bg-white rounded-2xl shadow-myShadow border border-grayLighter">
-          <h3 className="text-myBlack font-bold mb-1">My Journey</h3>
-          <p className="leading-5">
+          <h3 className="text-myBlack font-bold mb-2">My Journey</h3>
+          <p className="leading-5 mb-2">
             I’m Habibeh — a UI/UX designer with a background in graphic design
-            and several years of experience in the creative field. My passion
-            for color, composition, and visual storytelling started in graphic
-            design, but discovering UI/UX shifted my perspective. I realized
-            that great design is not only about how things look — but also how
-            they work and feel. I’ve completed two advanced courses in UI Design
-            and Product Design with some of the best instructors in the field.
-            These experiences helped me sharpen both my visual skills and
-            strategic thinking.
+            and several years of experience in the creative field.
           </p>
-          <h3 className="text-myBlack font-bold mb-1 mt-4">
+          <p className="leading-5 mb-2">
+            My passion for color, composition, and visual storytelling started
+            in graphic design, but discovering UI/UX shifted my perspective. I
+            realized that great design is not only about how things look — but
+            also how they work and feel.
+          </p>
+          <p className="leading-5">
+            I’ve completed two advanced courses in UI Design and Product Design
+            with some of the best instructors in the field. These experiences
+            helped me sharpen both my visual skills and strategic thinking.
+          </p>
+          <h3 className="text-myBlack font-bold mb-2 mt-4">
             Skills & Interests
           </h3>
           <p className="leading-5">
@@ -75,7 +79,7 @@ export const AboutMe = ({ title }) => {
       </section>
 
       {/* What Makes Me Different Section */}
-      <section className="bg-secondaryPink text-myBlack mt-4 py-6 border border-grayLighter shadow-myShadow rounded-2xl">
+      <section className="bg-secondaryPink text-myBlack mt-5 py-6 border border-grayLighter shadow-myShadow rounded-2xl">
         <img
           className="mx-auto animate-bounce mt-4"
           src={hapinestSmiley}
@@ -98,17 +102,17 @@ export const AboutMe = ({ title }) => {
           href="/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center border border-primaryDark rounded-2xl w-[240px] h-[56px] mx-auto mt-6"
+          className="flex items-center justify-center border border-primaryDark rounded-2xl w-[240px] h-[56px] mx-auto mt-5"
         >
           <img src={downloadIcon} alt="download icon" />
           <span className="text-primaryDark text-[16px] font-medium ml-1">
-            Download Resume
+            Download Résumé
           </span>
         </a>
       </section>
 
       {/* What I Do Best Section */}
-      <section className="mt-4">
+      <section className="mt-5">
         <div className="flex items-center pl-4">
           <img src={armIconPrimaryDark} alt="arm icon" className="w-6" />
           <h2 className="font-about-large text-primaryDark ml-1">
@@ -117,7 +121,7 @@ export const AboutMe = ({ title }) => {
         </div>
         <div className="bg-white p-4 mt-4 rounded-2xl border border-grayLighter shadow-myShadow">
           <p>
-            A quick overview of my strengths — across interface design, user
+            Here's a quick overview of my strengths — across interface design, user
             experience, and the soft skills that make good work happen.
           </p>
           <div
@@ -164,7 +168,7 @@ export const AboutMe = ({ title }) => {
               Soft Skills
             </h3>
             <ul className="list-disc pl-10 mt-2 leading-5 text-primaryDark">
-              <li>Problem-solving</li>
+              <li>Problem-Solving</li>
               <li>Creativity</li>
               <li>Color Theory</li>
               <li>Team Collaboration</li>
@@ -175,7 +179,7 @@ export const AboutMe = ({ title }) => {
       </section>
 
       {/* My Toolbox Section */}
-      <section className="mt-4">
+      <section className="mt-5">
         <div className="flex items-center pl-4">
           <img src={toolIconPrimaryDark} alt="arm icon" className="w-6" />
           <h2 className="font-about-large text-primaryDark ml-1">My Toolbox</h2>

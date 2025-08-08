@@ -56,3 +56,7 @@ export { default as project100MobileHero } from "./images/project-100-mobile-her
 export { default as project100DesignProcess } from "./images/project-100-design-process.jpg";
 export { default as projectHaPiNestMobileHero } from "./images/project-hapinest-mobile-hero.jpg";
 export { default as projectHaPiNestDesignProcess } from "./images/project-hapinest-design-process.jpg";
+export { default as frame } from "./images/Frame.svg";
+export { default as pamixLogo } from "./images/pamix-logo.jpg";
+export { default as pamixPacking } from "./images/pamix-packing.jpg";
+export { default as billboard } from "./images/billboard.jpg";
