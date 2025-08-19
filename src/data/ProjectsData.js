@@ -1,7 +1,7 @@
 import {
   projectCoverSmallVisitech,
   projectCoverSmall100,
-  projectCoverSmallPersica,
+  projectCoverVariousProjects,
   projectCoverSmallHaPiNest,
 } from "../assets";
 
@@ -28,10 +28,10 @@ const slides = [
     mobileApp: false,
   },
   {
-    image: projectCoverSmallPersica,
+    image: projectCoverVariousProjects,
     title: "Visual Design Showcase",
     subtitle: "Various Projects",
-    url: "/underConstruction",
+    url: "/projects/variousProjects",
     mobileApp: false,
   },
 ];
